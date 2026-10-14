@@ -80,7 +80,7 @@ function setLanguage(language) {
   languageButton.lang = isEnglish ? 'zh-CN' : 'en';
   languageButton.setAttribute('aria-label', isEnglish ? 'Switch to Chinese' : '切换为英文');
   document.querySelector('nav').setAttribute('aria-label', isEnglish ? 'Main navigation' : '主导航');
-  document.querySelector('.research-art').setAttribute('aria-label', isEnglish ? 'Illustration of time series and uncertainty research' : '时序与不确定性研究主题示意');
+  document.querySelector('.profile-photo img').alt = isEnglish ? 'Youlan Zhao' : '赵幽兰';
   document.querySelector('meta[name="description"]').content = isEnglish
     ? 'Youlan Zhao — PhD student at the University of Glasgow. Scientific systems, time series and uncertainty-aware inference.'
     : '赵幽兰 — 格拉斯哥大学博士生，研究科学系统、时间序列与不确定性感知推断。';
